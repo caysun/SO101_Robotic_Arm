@@ -127,7 +127,7 @@ def pynput_can_capture() -> bool:
     if not _pynput_available:
         return False
     if platform.system() == "Linux":
-        return not is_headless() and not is_wayland()
+        return not is_headless()
     return True
 
 
